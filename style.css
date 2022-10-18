@@ -1,0 +1,99 @@
+*
+{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+body
+{
+   display:flex;
+   justify-content:center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #000;
+}
+.bubble
+{
+  position:absolute;
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 25px rgba(255, 255,255, 0.25);
+  animation: animate 8s ease-in-out infinite;
+}
+@keyframes  animate
+{
+    0% 100%
+}
+        transform:translateY(-20px);
+
+{
+transform: translateY(-20px);
+}
+
+.bubble span
+{
+   position: absolute;
+   border-radius: 50%;
+}
+.bubble span:nth-child(1)
+{
+inset: 10px;
+border-left: 15px solid #0cb5ed;
+filter: blur(9px);
+}
+.bubble span:nth-child(2)
+{
+inset: 10px;
+border-right: 15px solid #ad0c19;
+filter: blur(9px);
+}
+.bubble span:nth-child(3)
+{
+inset: 10px;
+border-top: 15px solid #2f0858;
+filter: blur(9px);
+}
+.bubble span:nth-child(4)
+{
+inset: 10px;
+border-bottom: 15px solid #f3d009;
+filter: blur(9px);
+}
+.bubble.second span
+{
+   position:absolute;
+   border-radius: 50%;
+}
+.bubble.second
+{
+  position:fixed;
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 25px rgba(255, 255,255, 0.25);
+}
+.bubble.second span:nth-child(1)
+{
+inset: 10px;
+border-left: 15px solid #033d51;
+filter: blur(9px);
+}
+.bubble .second span:nth-child(2)
+{
+inset: 10px;
+border-right: 15px solid #dc1ecc;
+filter: blur(9px);
+}
+.bubble .second span:nth-child(3)
+{
+inset: 10px;
+border-top: 15px solid #7b0eef;
+filter: blur(9px);
+}
+.bubble .second span:nth-child(4)
+{
+inset: 10px;
+border-bottom: 15px solid #eee196;
+filter: blur(9px);
+}
